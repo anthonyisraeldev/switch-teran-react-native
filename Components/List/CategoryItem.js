@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, ImageBackground, Image } from "react-native";
+import { StyleSheet, Text, View, ImageBackground } from "react-native";
 import React from "react";
 import { colors } from "../../Styles/colors";
 import { Dimensions, useWindowDimensions } from "react-native";
@@ -8,9 +8,6 @@ const windowHeight = Dimensions.get("window").height;
 
 const CategoryItem = ({ category }) => {
   const { width, height } = useWindowDimensions();
-
-  console.log(width, height);
-  console.log(category.image);
 
   return (
     <>

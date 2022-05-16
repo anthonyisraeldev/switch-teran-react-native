@@ -51,9 +51,6 @@ const ProductsScreen = ({
     setInitialProducts(productosIniciales);
   }, []);
 
-  // console.log(initialProducts);
-  // console.log(productsFiltered);
-
   return (
     <KeyboardAvoidingView
       behavior={Platform.OS === "ios" ? "padding" : "height"}

@@ -4,8 +4,6 @@ import CategoriesScreen from "./Screens/CategoriesScreen";
 import ProductsScreen from "./Screens/ProductsScreen";
 import { useFonts } from "expo-font";
 import DetailScreen from "./Screens/DetailScreen";
-// import { SafeAreaView } from "react-native-safe-area-context";
-
 import { SafeAreaProvider } from "react-native-safe-area-context";
 
 export default function App() {
