@@ -48,7 +48,7 @@ const DetailScreen = ({ product, handleProduct }) => {
             style={styles.backBtn}
             onPress={() => handleProduct(null)}
           >
-            <Text style={styles.textBtn}>Go back</Text>
+            <Text style={styles.textBtn}>Volver</Text>
           </TouchableOpacity>
         </View>
       </View>

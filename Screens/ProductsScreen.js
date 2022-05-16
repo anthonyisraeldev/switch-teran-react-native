@@ -86,7 +86,7 @@ const ProductsScreen = ({
               style={styles.backBtn}
               onPress={() => handleCategory(null)}
             >
-              <Text style={styles.textBtn}>Go back</Text>
+              <Text style={styles.textBtn}>Volver</Text>
             </TouchableOpacity>
           </View>
         </View>
