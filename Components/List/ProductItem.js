@@ -8,8 +8,11 @@ const ProductItem = ({ product }) => {
       <View>
         <Text style={styles.title}>{product.title}</Text>
         <Text style={styles.price}>${product.price}</Text>
-
-        {product.offer && <Text style={styles.offer}>Oferta</Text>}
+        {product.offer && (
+          <View style={styles.boxOffer}>
+            <Text style={styles.offer}>Oferta</Text>
+          </View>
+        )}
       </View>
     </View>
   );
@@ -26,14 +29,14 @@ const styles = StyleSheet.create({
     marginBottom: 15,
     borderRadius: 10,
     padding: 10,
-    shadowColor: "#000000",
+    shadowColor: "#b1b1b1",
     shadowOffset: {
-      width: 20,
-      height: 50,
+      width: 2,
+      height: 5,
     },
-    shadowOpacity: 8.42,
-    shadowRadius: 10,
-    elevation: 3,
+    shadowOpacity: 10.42,
+    shadowRadius: 2,
+    elevation: 20,
   },
   image: {
     width: 80,
@@ -41,11 +44,13 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     marginRight: 20,
   },
-  offer: {
-    backgroundColor: "#b8ceff",
-    textAlign: "center",
+  boxOffer: {
     borderRadius: 4,
+    backgroundColor: "#b8ceff",
     marginTop: 10,
+  },
+  offer: {
+    textAlign: "center",
     color: "#407bff",
     fontFamily: "OpenSansBold",
     paddingHorizontal: 10,

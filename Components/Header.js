@@ -15,8 +15,10 @@ export default Header;
 const styles = StyleSheet.create({
   container: {
     backgroundColor: colors.lightGreen,
-    height: 80,
+    height: 100,
     width: "100%",
+    paddingTop: 40,
+    paddingBottom: 20,
     justifyContent: "center",
     alignItems: "center",
   },

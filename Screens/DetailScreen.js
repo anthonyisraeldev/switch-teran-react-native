@@ -34,7 +34,11 @@ const DetailScreen = ({ product, handleProduct }) => {
               : styles.containerHorizontal
           }
         >
-          {product.offer && <Text style={styles.offer}>Oferta</Text>}
+          {product.offer && (
+            <View style={styles.boxOffer}>
+              <Text style={styles.offer}>Oferta</Text>
+            </View>
+          )}
           <Text style={styles.title}>{product.title}</Text>
           <Text style={styles.description}>{product.description}</Text>
           <Text style={styles.price}>$ {product.price}</Text>
@@ -116,17 +120,19 @@ const styles = StyleSheet.create({
     fontFamily: "OpenSansBold",
     paddingBottom: 20,
   },
-  offer: {
-    backgroundColor: "#b8ceff",
-    textAlign: "center",
+  boxOffer: {
     borderRadius: 4,
+    backgroundColor: "#b8ceff",
     marginTop: 10,
+    width: 60,
+    marginBottom: 10,
+  },
+  offer: {
+    textAlign: "center",
     color: "#407bff",
     fontFamily: "OpenSansBold",
     paddingHorizontal: 10,
     paddingVertical: 2,
     fontSize: 12,
-    width: 60,
-    marginBottom: 10,
   },
 });
