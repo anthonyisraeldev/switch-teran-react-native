@@ -44,7 +44,8 @@ const CategoriesScreen = ({ handleCategory }) => {
             onChangeText={setInput}
             keyboardType="default"
             style={styles.input}
-            placeholder="Ingrese producto a buscar"
+            placeholder="Ingrese categoría a buscar..."
+            placeholderTextColor="#4a4a4a"
           />
           <TouchableOpacity onPress={handleErase}>
             <Entypo name="erase" size={30} color="white" />
